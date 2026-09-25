@@ -1,17 +1,19 @@
-# Sistema de Quiz — Empreendedorismo e Negócios
+# Classe Questao — Sistema de Quiz
 
-Trabalho de Algoritmos e Linguagem de Programação II: um sistema de quiz em Java, executado no console, com 15 perguntas de múltipla escolha sobre Empreendedorismo e Negócios. Ao final, o sistema mostra o total de questões, os acertos, os erros e o percentual de aproveitamento.
+Classe Java que representa uma questão de múltipla escolha para um sistema de Quiz (Perguntas e Respostas), desenvolvida para a disciplina Algoritmos e Linguagem de Programação II.
 
-## Estrutura
+## O que a classe faz
 
-- `Questao.java` — representa uma questão (enunciado, alternativas e resposta correta).
-- `Main.java` — monta as 15 questões, conduz o quiz no console e exibe o resultado final.
+`Questao` guarda o enunciado, a lista de alternativas e a letra da resposta correta, e oferece:
 
-## Como executar
+- `exibirQuestao(int numero)` — imprime o enunciado e as alternativas numeradas com letras (A, B, C...).
+- `isRespostaCorreta(char respostaUsuario)` — verifica se a letra informada corresponde à resposta correta.
+- Getters para enunciado, alternativas e resposta correta.
+
+## Como verificar que compila
 
 ```bash
-javac Main.java Questao.java
-java Main
+javac Questao.java
 ```
 
 ## Autor
